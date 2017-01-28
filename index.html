@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="UTF-8">
+		<title>DGT SODA</title>
+		<link rel="stylesheet" href="./style/main.scss"/>
+		<script>
+const {ipcRenderer} = require('electron');
+window.ipcRenderer = ipcRenderer;
+React = require('react');
+ReactDOM = require('react-dom');
+const {MuiThemeProvider} = require('material-ui/styles');
+window.MuiThemeProvider = MuiThemeProvider;
+const injectTapEventPlugin = require('react-tap-event-plugin');
+injectTapEventPlugin();
+require('babel-core/register');
+//require('babel-core').transform("code", {plugins: "transform-react-jsx"});
+require('babel-core').transform("code", {presets: ["react", "es2015"]});
+		</script>
+	</head>
+	<body>
+	<div id="app_container" style="display: flex; flex-direction: column; height: 100%; width: 100%"></div>
+	<script>
+require("./index.jsx");
+	</script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "DGT_Desktop",
+  "version": "0.0.1",
+  "main": "main.js",
+  "dependencies": {
+    "babel-core": "^6.22.1",
+    "babel-plugin-transform-react-jsx": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "electron": "^1.4.15",
+    "material-ui": "^0.16.7",
+    "node-jsx": "^0.13.3",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-tap-event-plugin": "^2.0.1"
+  },
+  "devDependencies": {
+    "scss": "^0.2.4"
+  }
+}
