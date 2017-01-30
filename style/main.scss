@@ -1,0 +1,35 @@
+html {
+	top:1px;
+	bottom: 1px;
+	left: 1px;
+	right: 1px;
+	border: 1px solid rgb(200,200,200);
+	margin: 1px;
+	border-radius: 5px;
+	overflow: hidden;
+	position: fixed;
+}
+
+body {
+	position: absolute;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	border-radius:4px;
+	overflow: hidden;
+}
+
+#app_container {
+	padding: 0px;
+	display: flex;
+	background: #eeeeee;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	border-radius:4px;
+	overflow: hidden;
+}
+
+div.drawer > div {
+	position: absolute !important;
+}

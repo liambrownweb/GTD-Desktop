@@ -1,6 +1,7 @@
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
 const url = require('url')
+const _ = require('underscore')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -11,8 +12,13 @@ function createWindow () {
 	win = new BrowserWindow({
 		width: 800, height: 600,
 		frame: false,
+		transparent: true,
 		show: false
 	})
+
+	win.on('resize', _.debounce(() => {
+		console.log(this.height);
+	}), 80);
 
 	win.once('ready-to-show', () => {
 		win.show();

@@ -9,6 +9,7 @@ const {ipcRenderer} = require('electron');
 window.ipcRenderer = ipcRenderer;
 React = require('react');
 ReactDOM = require('react-dom');
+window._ = require('underscore');
 const {MuiThemeProvider} = require('material-ui/styles');
 window.MuiThemeProvider = MuiThemeProvider;
 const injectTapEventPlugin = require('react-tap-event-plugin');

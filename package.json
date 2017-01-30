@@ -12,9 +12,16 @@
     "node-jsx": "^0.13.3",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-tap-event-plugin": "^2.0.1"
+    "react-tap-event-plugin": "^2.0.1",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
-    "scss": "^0.2.4"
+    "electron": "^1.4.15",
+    "electron-inspector": "^0.1.4",
+    "electron-rebuild": "^1.5.7",
+    "node-gyp": "^3.5.0",
+    "node-pre-gyp": "^0.6.32",
+    "scss": "^0.2.4",
+    "yargs": "^6.6.0"
   }
 }

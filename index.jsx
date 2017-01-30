@@ -1,6 +1,9 @@
 import darkBaseTheme from 'material-ui/styles/MuiThemeProvider';
 const {getMuiTheme} = require('material-ui/styles');
+
 const {Header} = require('./components/header.jsx');
+const {MainDrawer} = require('./components/main_drawer.jsx');
+
 window.sharedObject = {
 		"theme": getMuiTheme(darkBaseTheme)
 };
@@ -15,6 +18,7 @@ class App extends React.Component {
 							style={{position: "absolute", height: "100%", width: "100%"}}>
 						</div>
 					</div>
+					<MainDrawer />
 				</div>
 			</MuiThemeProvider>
 		);
