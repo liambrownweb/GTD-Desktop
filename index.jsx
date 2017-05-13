@@ -4,6 +4,8 @@ const {getMuiTheme} = require('material-ui/styles');
 const {Header} = require('./components/header.jsx');
 const {MainDrawer} = require('./components/main_drawer.jsx');
 
+const {SettingsView} = require('./views/settings_view.jsx');
+
 window.sharedObject = {
 		"theme": getMuiTheme(darkBaseTheme)
 };
@@ -16,9 +18,10 @@ class App extends React.Component {
 					<div id="main_window_container" style={{flex: "1 0 auto", position:"relative", width: "100%"}}>
 						<div id="main_window" 
 							style={{position: "absolute", height: "100%", width: "100%"}}>
+							<SettingsView />
 						</div>
+						<MainDrawer open={false}/>
 					</div>
-					<MainDrawer />
 				</div>
 			</MuiThemeProvider>
 		);

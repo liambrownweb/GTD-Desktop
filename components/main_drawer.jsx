@@ -9,6 +9,15 @@ class MainDrawer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {open: this.props.open};
+	this.handleItemClick = this.handleItemClick.bind(this);
+	this.handleToggle = this.handleToggle.bind(this);
+  }
+
+  handleItemClick (event) {
+	  let target = event.currentTarget,
+		  id = target.id;
+	  this.handleToggle();
+	  console.log(id);
   }
 
   handleToggle () {
@@ -19,8 +28,7 @@ class MainDrawer extends React.Component {
     return (
       <div>
         <Drawer className="drawer" open={this.state.open}>
-          <MenuItem>Menu Item</MenuItem>
-          <MenuItem>Menu Item 2</MenuItem>
+          <MenuItem onClick={this.handleItemClick} id="settings">Settings</MenuItem>
         </Drawer>
       </div>
     );
